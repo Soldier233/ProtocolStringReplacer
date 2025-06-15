@@ -115,8 +115,8 @@ public final class ConsoleReplaceManager {
                 field.setAccessible(true);
                 oriFactory = field.get(LogManager.getRootLogger());
                 PsrMessageFactory psrMessageFactory = new PsrMessageFactory();
-                field.set(LogManager.getRootLogger(), psrMessageFactory);
-                field.setAccessible(false);
+//                field.set(LogManager.getRootLogger(), psrMessageFactory);
+//                field.setAccessible(false);
             } catch (NoSuchFieldException | IllegalAccessException ex) {
                 e.printStackTrace();
             }
